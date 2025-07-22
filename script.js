@@ -31,9 +31,9 @@ const getRandomWord = () => {
 };
 
 const gameOver = (isVictory) => {
-    const modalText = isVictory ? `Bạn đã tìm được từ:` : "Đáp án đúng là:";
+    const modalText = isVictory ? `🎉 Bạn đã tìm được từ:` : "😢 Đáp án đúng là:";
     gameModal.querySelector("img").src = `images/${isVictory ? "victory" : "lost"}.gif`;
-    gameModal.querySelector("h4").innerText = isVictory ? "🎉 Chúc mừng!" : "😢 Thua rồi!";
+    gameModal.querySelector("h4").innerText = isVictory ? "Chúc mừng!" : "Thua rồi!";
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentFullWord}</b>`;
     gameModal.classList.add("show");
 };
