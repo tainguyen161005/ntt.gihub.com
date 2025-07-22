@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game JavaScript | CodingNepal</title>
+    <title>Trò chơi đoán từ - Việt Nam</title>
     <link rel="stylesheet" href="hangman.css">
+    <!-- Danh sách từ + script chính -->
     <script src="word-list.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Modal khi thắng/thua -->
     <div class="game-modal">
         <div class="content">
             <img src="#" alt="gif">
-            <h4>Game Over!</h4>
-            <p>The correct word was: <b>rainbow</b></p>
-            <button class="play-again">Play Again</button>
+            <h4>Thua rồi!</h4>
+            <p>Đáp án đúng là: <b>Hà Nội</b></p>
+            <button class="play-again">Chơi lại</button>
         </div>
     </div>
+
+    <!-- Khung game -->
     <div class="container">
+        <!-- Ảnh treo cổ -->
         <div class="hangman-box">
-            <img src="#" draggable="false" alt="hangman-img">
-            <h1>Hangman Game</h1>
+            <img src="images/hangman-0.svg" draggable="false" alt="hangman-img">
+            <h1>Trò chơi đoán từ</h1>
         </div>
+
+        <!-- Khu vực chơi -->
         <div class="game-box">
             <ul class="word-display"></ul>
-            <h4 class="hint-text">Hint: <b></b></h4>
-            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <h4 class="hint-text">Gợi ý: <b></b></h4>
+            <h4 class="guesses-text">Đoán sai: <b>0 / 6</b></h4>
             <div class="keyboard"></div>
         </div>
     </div>
