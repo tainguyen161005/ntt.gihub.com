@@ -1,262 +1,58 @@
 const wordList = [
-    {
-        word: "guitar",
-        hint: "A musical instrument with strings."
-    },
-    {
-        word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
-    },
-    {
-        word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
-    },
-    {
-        word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
-    },
-    {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
-    },
-    {
-        word: "football",
-        hint: "A popular sport played with a spherical ball."
-    },
-    {
-        word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
-    },
-    {
-        word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
-    },
-    {
-        word: "history",
-        hint: "The study of past events and human civilization."
-    },
-    {
-        word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
-    },
-    {
-        word: "jazz",
-        hint: "A genre of music characterized by improvisation and syncopation."
-    },
-    {
-        word: "camera",
-        hint: "A device used to capture and record images or videos."
-    },
-    {
-        word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or daring experience."
-    },
-    {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
-    },
-    {
-        word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
-    },
-    {
-        word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
-    },
-    {
-        word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
-    },
-    {
-        word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
-    },
-    {
-        word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
-    },
-    {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
-    },
-    {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
-    },
-    {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
-    },
-    {
-        word: "sculpture",
-        hint: "A three-dimensional art form created by shaping or combining materials."
-    },
-    {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
-    },
-    {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
-    },
-    {
-        word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
-    },
-    {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
-    },
-    {
-        word: "waterfall",
-        hint: "A cascade of water falling from a height."
-    },
-    {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
-    },
-    {
-        word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
-    },
-    {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
-    },
-    {
-        word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
-    },
-    {
-        word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
-    },
-    {
-        word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
-    },
-    {
-        word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
-    },
-    {
-        word: "telephone",
-        hint: "A device used to transmit sound over long distances."
-    },
-    {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
-    },
-    {
-        word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
-    },
-    {
-        word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
-    },
-    {
-        word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
-    },
-    {
-        word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
-    },
-    {
-        word: "breeze",
-        hint: "A gentle wind."
-    },
-    {
-        word: "oasis",
-        hint: "A fertile spot in a desert where water is found."
-    },
-    {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
-    },
-    {
-        word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
-    },
-    {
-        word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
-    },
-    {
-        word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
-    },
-    {
-        word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
-    },
-    {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
-    },
-    {
-        word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
-    },
-    {
-        word: "paradox",
-        hint: "A statement or situation that contradicts itself or defies intuition."
-    },
-    {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
-    },
-    {
-        word: "secret",
-        hint: "Something kept hidden or unknown to others."
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something."
-    },
-    {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
-    },
-    {
-        word: "obfuscate",
-        hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
-    },
-    {
-        word: "unveil",
-        hint: "To make known or reveal something previously secret or unknown."
-    },
-    {
-        word: "illusion",
-        hint: "A false perception or belief; a deceptive appearance or impression."
-    },
-    {
-        word: "moonlight",
-        hint: "The light from the moon."
-    },
-    {
-        word: "vibrant",
-        hint: "Full of energy, brightness, and life."
-    },
-    {
-        word: "nostalgia",
-        hint: "A sentimental longing or wistful affection for the past."
-    },
-    {
-        word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
-    },
+    // 🌆 ĐỊA DANH
+    { word: "hanoi", fullWord: "Hà Nội", hint: "Thủ đô của Việt Nam, nổi tiếng với Hồ Gươm và phố cổ." },
+    { word: "saigon", fullWord: "Sài Gòn", hint: "Tên gọi cũ của thành phố Hồ Chí Minh." },
+    { word: "halong", fullWord: "Hạ Long", hint: "Vịnh nổi tiếng được UNESCO công nhận là di sản thiên nhiên thế giới." },
+    { word: "phuquoc", fullWord: "Phú Quốc", hint: "Hòn đảo lớn nhất Việt Nam, nổi tiếng với bãi biển đẹp." },
+    { word: "danang", fullWord: "Đà Nẵng", hint: "Thành phố ven biển nổi tiếng với cầu Rồng và bãi biển Mỹ Khê." },
+    { word: "ninhbinh", fullWord: "Ninh Bình", hint: "Địa danh được ví như Vịnh Hạ Long trên cạn." },
+    { word: "sapa", fullWord: "Sa Pa", hint: "Thị trấn vùng núi phía Bắc, nổi tiếng với ruộng bậc thang và Fansipan." },
+    { word: "hoian", fullWord: "Hội An", hint: "Phố cổ nổi tiếng với đèn lồng, di sản văn hóa thế giới." },
+    { word: "hue", fullWord: "Huế", hint: "Cố đô với nhiều lăng tẩm và di sản triều Nguyễn." },
+    { word: "cuchi", fullWord: "Địa đạo Củ Chi", hint: "Địa đạo nổi tiếng ở miền Nam thời kháng chiến chống Mỹ." },
+    { word: "camau", fullWord: "Cà Mau", hint: "Điểm cực Nam của Việt Nam." },
+    { word: "camranh", fullWord: "Cam Ranh", hint: "Vịnh biển đẹp thuộc tỉnh Khánh Hòa." },
+    { word: "bentre", fullWord: "Bến Tre", hint: "Tỉnh nổi tiếng với dừa và kẹo dừa." },
+    { word: "langson", fullWord: "Lạng Sơn", hint: "Tỉnh biên giới nổi tiếng với chợ Đồng Đăng và động Tam Thanh." },
+    { word: "trangan", fullWord: "Tràng An", hint: "Quần thể danh thắng ở Ninh Bình được UNESCO công nhận." },
+    { word: "mekong", fullWord: "Đồng bằng sông Mekong", hint: "Vùng đồng bằng rộng lớn, nổi tiếng với chợ nổi và miệt vườn." },
+    { word: "taynguyen", fullWord: "Tây Nguyên", hint: "Vùng đất nổi tiếng với cà phê, cồng chiêng và rừng đại ngàn." },
+    { word: "myson", fullWord: "Mỹ Sơn", hint: "Quần thể tháp Chăm cổ ở Quảng Nam." },
+    { word: "thanglong", fullWord: "Thăng Long", hint: "Tên gọi cổ của Hà Nội." },
+    { word: "dinhdoclap", fullWord: "Dinh Độc Lập", hint: "Nơi gắn liền với sự kiện 30/4/1975 giải phóng miền Nam." },
+
+    // 🍜 ẨM THỰC & VĂN HÓA
+    { word: "banhmi", fullWord: "Bánh mì", hint: "Món ăn đường phố gồm bánh mì kẹp thịt, chả, pate, rau." },
+    { word: "pho", fullWord: "Phở", hint: "Món ăn truyền thống nổi tiếng với nước dùng ngọt từ xương bò." },
+    { word: "buncha", fullWord: "Bún chả", hint: "Món ăn Hà Nội gồm thịt nướng, bún và nước chấm." },
+    { word: "comtam", fullWord: "Cơm tấm", hint: "Món ăn đặc trưng của miền Nam, ăn với sườn nướng." },
+    { word: "bunbohue", fullWord: "Bún bò Huế", hint: "Món bún cay đặc trưng của cố đô Huế." },
+    { word: "nuocmam", fullWord: "Nước mắm", hint: "Gia vị truyền thống không thể thiếu trong bữa ăn người Việt." },
+    { word: "cafe", fullWord: "Cà phê", hint: "Đặc sản nổi tiếng của Việt Nam, đặc biệt là cà phê sữa đá." },
+    { word: "trungthu", fullWord: "Tết Trung Thu", hint: "Tết dành cho thiếu nhi, có múa lân và đèn ông sao." },
+    { word: "tet", fullWord: "Tết Nguyên Đán", hint: "Dịp lễ lớn nhất trong năm của người Việt Nam." },
+    { word: "aodai", fullWord: "Áo dài", hint: "Trang phục truyền thống của phụ nữ Việt Nam." },
+    { word: "nonla", fullWord: "Nón lá", hint: "Loại nón truyền thống đặc trưng của Việt Nam." },
+    { word: "xichlo", fullWord: "Xích lô", hint: "Phương tiện giao thông cổ điển từng rất phổ biến ở đô thị Việt Nam." },
+    { word: "liondance", fullWord: "Múa lân", hint: "Màn biểu diễn truyền thống dịp Tết và lễ hội." },
+
+    // 🏯 LỊCH SỬ & BIỂU TƯỢNG
+    { word: "hochiminh", fullWord: "Hồ Chí Minh", hint: "Vị lãnh tụ vĩ đại của dân tộc Việt Nam." },
+    { word: "trongdong", fullWord: "Trống đồng Đông Sơn", hint: "Biểu tượng của nền văn hóa Đông Sơn." },
+    { word: "vandieu", fullWord: "Văn Miếu", hint: "Quốc Tử Giám – trường đại học đầu tiên của Việt Nam." },
+    { word: "langbac", fullWord: "Lăng Bác", hint: "Nơi an nghỉ của Chủ tịch Hồ Chí Minh." },
+    { word: "conrong", fullWord: "Con rồng", hint: "Biểu tượng linh thiêng gắn liền với văn hóa Việt Nam." },
+    { word: "chimlac", fullWord: "Chim Lạc", hint: "Hình ảnh biểu tượng trên trống đồng Đông Sơn." },
+    { word: "quocngugi", fullWord: "Quốc ngữ", hint: "Chữ viết hiện nay của người Việt, được phát triển từ chữ Latin." },
+    { word: "quocca", fullWord: "Quốc ca", hint: "Bài Tiến Quân Ca do nhạc sĩ Văn Cao sáng tác." },
+    { word: "docthanh", fullWord: "Bản Tuyên ngôn độc lập", hint: "Văn kiện lịch sử do Chủ tịch Hồ Chí Minh đọc tại Ba Đình." },
+
+    // 🏝 THIÊN NHIÊN & DU LỊCH
+    { word: "sondoong", fullWord: "Sơn Đoòng", hint: "Hang động lớn nhất thế giới, nằm ở Quảng Bình." },
+    { word: "nhatrang", fullWord: "Nha Trang", hint: "Thành phố biển nổi tiếng với đảo Vinpearl." },
+    { word: "muine", fullWord: "Mũi Né", hint: "Địa danh nổi tiếng với đồi cát bay ở Bình Thuận." },
+    { word: "dalat", fullWord: "Đà Lạt", hint: "Thành phố ngàn hoa, khí hậu mát mẻ quanh năm." },
+    { word: "fansipan", fullWord: "Fansipan", hint: "Nóc nhà Đông Dương cao 3.143m." },
+    { word: "bienho", fullWord: "Biển Hồ", hint: "Hồ nước tự nhiên ở Pleiku, còn gọi là hồ T’Nưng." },
+    { word: "condao", fullWord: "Côn Đảo", hint: "Hòn đảo lịch sử gắn liền với nhà tù thời Pháp." }
 ];
