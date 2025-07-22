@@ -56,18 +56,23 @@ body {
     margin: -40px 0 35px;
     border-color: transparent;
 }
-.game-box h4 {
+
+/* ✅ Đồng bộ phần Gợi ý và Đoán sai */
+.game-box .hint-text,
+.game-box .guesses-text {
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.2rem;   /* đồng bộ cỡ chữ */
+    font-weight: 600;    /* đậm dễ đọc */
+    color: #333;         /* màu chữ rõ hơn */
     margin-bottom: 15px;
 }
-.game-box h4 b {
-    font-weight: 600;
-}
+
+/* ✅ Phần số đoán sai vẫn giữ màu đỏ */
 .game-box .guesses-text b {
     color: #ff0000;
+    font-weight: 700; /* vẫn nổi bật hơn */
 }
+
 .game-box .keyboard {
     display: flex;
     gap: 5px;
@@ -162,8 +167,9 @@ body {
     .hangman-box h1 {
         display: none;
     }
-    .game-box h4 {
-        font-size: 1rem;
+    .game-box .hint-text,
+    .game-box .guesses-text {
+        font-size: 1rem; /* nhỏ hơn trên mobile */
     }
     .word-display .letter {
         margin-bottom: 35px;
